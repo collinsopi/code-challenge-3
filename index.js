@@ -1,4 +1,3 @@
-// script.js
 const baseUrl = 'http://localhost:3000/posts';
 
 function displayPosts() {

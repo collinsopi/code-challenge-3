@@ -2,14 +2,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f9fc;
+  background: #a7b2c2;
   color: #1e1e2f;
 }
 
 header {
   text-align: center;
   padding: 2rem 1rem 1rem;
-  background-color: #ffffff;
+  background-color: #c6cbce;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
@@ -21,7 +21,7 @@ header h1 {
 
 .subheading {
   font-size: 1rem;
-  color: #718096;
+  color: #5d636d;
 }
 
 .container {
@@ -41,14 +41,14 @@ header h1 {
 
 .post-detail {
   flex: 2;
-  background: white;
+  background: rgb(199, 195, 195);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 .post-list-box {
-  background: white;
+  background: rgb(199, 195, 195);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -62,7 +62,7 @@ header h1 {
 
 .post-list li {
   padding: 10px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgb(199, 195, 195);
   cursor: pointer;
 }
 
@@ -71,7 +71,7 @@ header h1 {
 }
 
 .form-box {
-  background: white;
+  background: rgb(199, 195, 195);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);

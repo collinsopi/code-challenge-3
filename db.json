@@ -1,22 +1,30 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "First Blog Post",
       "content": "This is the content of the first post.",
       "author": "John Doe"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Second Blog Post",
       "content": "Here's some insightful writing in the second post.",
       "author": "Jane Smith"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Third Blog Post",
       "content": "The third post is all about JSON servers and APIs!",
       "author": "Alex Johnson"
+    },
+    {
+      "id": "585d",
+      "title": "Drama Kenya",
+      "content": "geiusl",
+      "author": "Gen Z",
+      "image": "https://www.pexels.com/photo/street-and-store-19565252/",
+      "date": "2025-06-23"
     }
   ]
 }
