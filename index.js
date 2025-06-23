@@ -90,11 +90,11 @@ function deletePost(id) {
     document.getElementById('delete-button').classList.add('hidden');
 }
 
-// function main() {
-//     displayPosts();
-//     addNewPostListener();
-// }
+function main() {
+    displayPosts();
+    addNewPostListener();
+}
 
-// document.addEventListener('DOMContentLoaded', main);
+document.addEventListener('DOMContentLoaded', main);
 
-// let currentPost = null;
+let currentPost = null;
