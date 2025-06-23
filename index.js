@@ -42,6 +42,59 @@ function showPostDetail(post) {
     currentPost = post;
 }
 
-function showEditForm(post) {
-    const form 
+function addNewPostListener() {
+    const form = document.getElementById('new-post-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const newPost = {
+            title:document.getElementById('new-title').value,
+            content:document.getElementById('new-content').value,
+            author:document.getElementById('new-author').value
+        };
+        const div = document.createElement('div');
+        div.textContent = newPost.title;
+        div.dataset.id = 'temp';
+        div.addEventListener('click', () => showPostDetail(newPost));
+        document.getElementById('post-list').appendChild(div);
+
+        form.reset();
+    });
 }
+
+function showEditForm(post) {
+    const form = document.getElementById('edit-post-form');
+    form.classList.remove('hidden');
+    document.getElementById('edit-title').value = post.title;
+    document.getElementById('edit-content').value = post.content;
+
+    form.onsubmit = function(e) {
+        e.preventDefault();
+        post.title = document.getElementById('edit-title').value;
+        post.content = document.getElementById('edit-content').value;
+        showPostDetail(post);
+        form.classList.add('hidden');
+        displayPosts();
+    };
+
+    document.getElementById('cancel-edit').onclick = () =>form.classList.add('hidden');
+}
+
+function deletePost(id) {
+    const postList = document.getElementById('post-list');
+    const postDivs = postList.querySelectorAll('div');
+    postDivs.forEach(div => {
+        if (div.dataset.id == id) div.remove();
+    });
+    document.getElementById('post-info').innerHTML = '<p>Select a post to view details</p>'
+    document.getElementById('edit-button').classList.add('hidden');
+    document.getElementById('delete-button').classList.add('hidden');
+}
+
+// function main() {
+//     displayPosts();
+//     addNewPostListener();
+// }
+
+// document.addEventListener('DOMContentLoaded', main);
+
+// let currentPost = null;
