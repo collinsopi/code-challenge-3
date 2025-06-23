@@ -1,1 +1,22 @@
-{}
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Blog Post",
+      "content": "This is the content of the first post.",
+      "author": "John Doe"
+    },
+    {
+      "id": 2,
+      "title": "Second Blog Post",
+      "content": "Here's some insightful writing in the second post.",
+      "author": "Jane Smith"
+    },
+    {
+      "id": 3,
+      "title": "Third Blog Post",
+      "content": "The third post is all about JSON servers and APIs!",
+      "author": "Alex Johnson"
+    }
+  ]
+}
